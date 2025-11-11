@@ -10,6 +10,13 @@
         --denied: #ff8686;
         --text: #515959;
         --border: #59de0c;
+        /* Pro 2. Kartku */
+        --gprimary: #F5AD27;
+        --gsecondary: #964A12;
+        --gbackground: #ffd95d;
+        --gwhite: #FFFFFF;
+        --gtext: #515959;
+        --ggradient: #ffffffad;
     }
     .main {
         display: flow-root;
@@ -34,62 +41,151 @@
         color: var(--secondary);
         font-size: 3em;
         font-weight: bold;
-        margin-top: 0em;
+        margin-top: 0rem;
     }
-    .highlight {
+    .card__text--highlight {
         color: var(--primary);
         font-weight: bold;
     }
-    .big {
-        font-size: 2em;
+    .card__text--big {
+        font-size: 2rem;
         font-weight: bold;
     }
-    .small {
-        font-size: 0.8em;
+    .card__text--small {
+        font-size: 0.8rem;
     }
-    .button {
+    .card__button {
         background-color: var(--primary);
-        border-radius: 0.5em;
-        padding: 1em;
+        border-radius: 0.5rem;
+        padding: 1rem;
         text-align: center;
-        margin-top: 2em;
+        margin-top: 2rem;
     }
-    .button--text {
+    .card__button--text {
         color: white;
         font-weight: bold;
         text-decoration: none;
     }
 
     .card__body {
-        margin-top: 2em;
+        margin-top: 2rem;
     }
     .card__header {
+        text-align: left;
     }
-    p {
-        margin-block: 0.5em;
+    .card__text-default {
+        margin-block: 0.5rem;
         color: var(--text);
     }
     .card__footer {
-
+        justify-content: center;
+        align-items: center;
     }
-    .card {
-        border: solid 1px var(--border);
-        border-radius: 1em;
-        padding: 1.5em;
+    .card__footer__ul {
+        text-align: start;
     }
-    .ul__style {
-
-    }
-    .ul__yes {
+    .li--text--yes {
         list-style-image: url(../images/check.svg);
     }
-    .ul__no {
+    .li--text--no {
         list-style-image: url(../images/cross.svg);
     }
-    .li--text {
+    .li--highlight {
         color: var(--text);
     }
-    .ul__text {
-        padding: 0.5em;
+    .ul__li {
+        padding: 0.5rem;
+    }
+    .card__marketer {
+        border: solid 1px var(--border);
+        border-radius: 1rem;
+        padding: 1.5rem;
+        display: inline-block;
+    }
+
+    /* Druhá kartka */
+
+    .card__gold {
+        background-color: var(--gbackground);
+        background-image: linear-gradient(to bottom, var(--ggradient), var(--gbackground));
+        border-radius: 1.5rem;
+        border: solid 5px var(--gprimary);
+        padding: 1.5rem;
+    }
+    .gold__header {
+        text-align: center;
+    }
+    .gold__warning {
+        color: var(--gwhite);
+        background-color: var(--gprimary);
+        border-radius: 1rem;
+        padding: 0.5rem;
+        margin-left: 2.25rem;
+        margin-right: 2.25rem;
+        box-shadow: 0 0 5px var(--gprimary);
+        font-size: 0.9rem;
+    }
+    .gold__title {
+        color: var(--gsecondary);
+        font-weight: bold;
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+        margin-top: 2rem;
+    }
+    .gold__text {
+        color: var(--gsecondary);
+        text-align: center;
+    }
+    .gold__sub-card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: var(--gwhite);
+        border-radius: 0.5rem;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+        box-shadow: 5px 5px 10px #0000002d;
+
+    }
+    .gold__sub-card__title {
+        color: var(--gtext);
+        margin-top: 2rem;
+        margin-bottom: 0rem;
+        font-size: 0.8rem;
+    }
+    .gold_sub-card__price {
+        color: var(--gprimary);
+        font-size: 3rem;
+        font-weight: bold;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+    .gold__benefits {
+        margin: 0.5rem;
+    }
+    .gold__benefits__item {
+        background: rgba(255, 255, 255, 0.5);
+        border-radius: 0.5rem;
+        padding: 1rem;
+    }
+    .gold__benefits--text {
+        color: var(--gsecondary);
+    }
+    .gold__footer {
+        margin: 0.5rem;
+    }
+    .gold__footer__button {
+        background-color: var(--gprimary);
+        border-radius: 0.5rem;
+        text-align: center;
+        justify-content: center;
+        padding: 1.25rem;
+        margin-top: 2rem;
+    }
+    .gold__footer__button--text {
+        text-decoration: none;
+        color: var(--gwhite);
+        font-weight: bold;
     }
 }
