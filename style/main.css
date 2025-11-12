@@ -111,6 +111,7 @@
         border-radius: 1.5rem;
         border: solid 5px var(--gprimary);
         padding: 1.5rem;
+        min-width: 10em
     }
     .gold__header {
         text-align: center;
@@ -120,8 +121,8 @@
         background-color: var(--gprimary);
         border-radius: 1rem;
         padding: 0.5rem;
-        margin-left: 2.25rem;
-        margin-right: 2.25rem;
+        margin-left: 2.5rem;
+        margin-right: 2.5rem;
         box-shadow: 0 0 5px var(--gprimary);
         font-size: 0.9rem;
     }
